@@ -1,0 +1,83 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 72px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 60px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #0c0c0d;
+  color: #f4efe7;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+/* Sections sit under a fixed header — offset anchor scroll */
+section[id] {
+  scroll-margin-top: var(--header-height);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .glass {
+    background: rgba(12, 12, 13, 0.6);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  .glass-light {
+    background: rgba(244, 239, 231, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .gold-line {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(168, 133, 74, 0.6) 30%,
+      rgba(205, 178, 122, 0.9) 50%,
+      rgba(168, 133, 74, 0.6) 70%,
+      transparent 100%
+    );
+  }
+  .grid-pattern {
+    background-image: linear-gradient(rgba(244, 239, 231, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(244, 239, 231, 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+}
+
+/* Reduce motion respect */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
