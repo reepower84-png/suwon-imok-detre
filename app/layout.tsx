@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "수원이목지구 대방 디에트르",
     description:
-      "북수원 핵심 입지, 미니신도시급 4,200세대 규모. 분양 문의 1666-6365",
+      "북수원 핵심 입지, 미니신도시급 4,500세대 규모. 분양 문의 1666-6365",
     type: "website",
     locale: "ko_KR"
   }

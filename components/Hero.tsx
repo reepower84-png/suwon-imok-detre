@@ -38,7 +38,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-sm leading-relaxed text-sand/80 sm:text-base md:text-lg">
-            미니신도시급 4,200세대 규모의 수원이목지구.
+            미니신도시급 4,500세대 규모의 수원이목지구.
             <br className="hidden sm:block" />
             광역 교통망과 명문 학군, 프리미엄 커뮤니티가 완성하는
             <br className="hidden sm:block" />
@@ -48,12 +48,12 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-ink transition-all hover:bg-gold-light"
+              className="group inline-flex items-center gap-2 rounded-full bg-gold px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-semibold text-ink transition-all hover:bg-gold-light"
             >
               방문 예약 / 분양 문의
               <svg
-                width="16"
-                height="16"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -69,11 +69,11 @@ export default function Hero() {
             </a>
             <a
               href={PHONE_TEL}
-              className="inline-flex items-center gap-2 rounded-full border border-sand/30 px-7 py-4 text-sm font-medium text-sand hover:bg-sand/5"
+              className="inline-flex items-center gap-2 rounded-full border border-sand/30 px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-medium text-sand hover:bg-sand/5"
             >
               <svg
-                width="14"
-                height="14"
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -85,6 +85,30 @@ export default function Hero() {
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z" />
               </svg>
               1666 · 6365
+            </a>
+            <a
+              href="https://form.naver.com/response/UuI_Z5VPT2BJ34F2xGWA8A"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-semibold text-gold-light hover:bg-gold/20"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              방문상담예약
             </a>
           </div>
         </div>

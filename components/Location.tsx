@@ -2,7 +2,7 @@ import SectionEyebrow from "./SectionEyebrow";
 import { PHONE_TEL } from "@/lib/sections";
 
 const TRANSPORT = [
-  { label: "지하철 1호선 성균관대역", time: "차량 약 5분" },
+  { label: "지하철 1호선 성균관대역", time: "도보 10분" },
   { label: "GTX-C 노선 (예정)", time: "수원 정차역 인접" },
   { label: "신분당선 연장 (호매실~광교)", time: "광역 환승 가능" },
   { label: "인덕원~동탄 복선전철 106역", time: "이목지구 인근" }
@@ -55,25 +55,12 @@ export default function Location() {
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: "url('/images/20260430_1048072.jpg')"
+                backgroundImage: "url('/images/20260504_165203.jpg')"
               }}
               aria-hidden
             />
             <div className="absolute inset-0 bg-ink/50" />
             <div className="absolute inset-0 grid-pattern opacity-30" />
-
-            {/* Pin */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-[calc(50%+82px)] -translate-y-[calc(50%+47px)]">
-              <div className="relative">
-                <span className="absolute -inset-6 animate-ping rounded-full bg-gold/30" />
-                <span className="relative flex h-5 w-5 items-center justify-center rounded-full bg-gold ring-4 ring-gold/30">
-                  <span className="h-1.5 w-1.5 rounded-full bg-ink" />
-                </span>
-              </div>
-              <div className="mt-3 -translate-x-1/2 rounded-full bg-ink/85 px-3 py-1 text-[11px] tracking-widest text-gold-light backdrop-blur">
-                대방 디에트르
-              </div>
-            </div>
 
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 bg-gradient-to-t from-ink/95 to-transparent p-5 md:p-7">
               <div>
@@ -127,8 +114,11 @@ export default function Location() {
                 <div className="text-[10px] tracking-[0.4em] text-gold-light">
                   CALL US
                 </div>
-                <div className="mt-1 font-serif text-2xl text-sand md:text-3xl">
+                <div className="mt-1 font-serif text-3xl text-sand md:text-4xl lg:text-5xl">
                   1666 · 6365
+                </div>
+                <div className="mt-2 text-xs text-sand/70 md:text-sm">
+                  스마트폰으로 터치 시 바로 연결됩니다
                 </div>
               </div>
               <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold text-ink transition-transform group-hover:scale-105">
