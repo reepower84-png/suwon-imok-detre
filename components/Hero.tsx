@@ -48,7 +48,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-gold px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-semibold text-ink transition-all hover:bg-gold-light"
+              className="group inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/20 px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-semibold text-sand backdrop-blur-md transition-colors hover:bg-gold/30"
             >
               방문 예약 / 분양 문의
               <svg
