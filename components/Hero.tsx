@@ -69,7 +69,7 @@ export default function Hero() {
             </a>
             <a
               href={PHONE_TEL}
-              className="inline-flex items-center gap-2 rounded-full border border-sand/30 px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-medium text-sand hover:bg-sand/5"
+              className="inline-flex items-center gap-2 rounded-full bg-sand px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-semibold text-ink shadow-lg shadow-black/20 transition-colors hover:bg-white"
             >
               <svg
                 width="18"
@@ -90,7 +90,7 @@ export default function Hero() {
               href="https://form.naver.com/response/UuI_Z5VPT2BJ34F2xGWA8A"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-semibold text-gold-light hover:bg-gold/20"
+              className="inline-flex items-center gap-2 rounded-full bg-gold-light px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-semibold text-ink shadow-lg shadow-black/20 transition-colors hover:bg-sand"
             >
               <svg
                 width="18"
