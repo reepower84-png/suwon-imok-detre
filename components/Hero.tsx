@@ -38,9 +38,9 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-sm leading-relaxed text-sand/80 sm:text-base md:text-lg">
-            미니신도시급 4,500세대 규모의 수원이목지구.
+            미니신도시급 4,500세대 규모의 수원이목지구.{" "}
             <br className="hidden sm:block" />
-            광역 교통망과 명문 학군, 프리미엄 커뮤니티가 완성하는
+            광역 교통망과 명문 학군, 프리미엄 커뮤니티가 완성하는{" "}
             <br className="hidden sm:block" />
             품격 있는 라이프스타일을 만나보세요.
           </p>
