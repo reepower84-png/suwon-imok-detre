@@ -71,7 +71,41 @@ export default function Contact() {
             </div>
           </a>
 
-          <div className="mt-6 grid gap-3 md:grid-cols-2">
+          <div className="mt-6 rounded-2xl border border-gold/25 bg-gold/[0.07] p-6 md:p-7">
+            <div className="text-[10px] tracking-[0.4em] text-gold-light">
+              SALES TERMS
+            </div>
+            <div className="mt-3 text-sm text-sand md:text-base">
+              34평 입주 시까지{" "}
+              <span className="font-semibold text-gold-light">
+                약 5천만원대
+              </span>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {[
+                "10·15 부동산 규제 미적용",
+                "분양권 전매 가능",
+                "실거주 의무 없음",
+                "1차 계약금 1,000만원",
+                "계약금 5% · 입주 시까지",
+                "다주택자 중도금 60% 대출",
+                "기본 옵션 약 2,000만원"
+              ].map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[11px] text-sand/80 md:text-xs"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+            <p className="mt-4 text-[11px] leading-relaxed text-sand/50 md:text-xs">
+              타입별 자금 계획과 잔여 세대 현황은 전화 상담으로 바로 안내해
+              드립니다.
+            </p>
+          </div>
+
+          <div className="mt-3 grid gap-3 md:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 md:p-6">
               <div className="text-[10px] tracking-[0.4em] text-gold-light">
                 MODEL HOUSE

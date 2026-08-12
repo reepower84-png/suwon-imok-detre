@@ -45,7 +45,34 @@ export default function Hero() {
             품격 있는 라이프스타일을 만나보세요.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex w-fit max-w-full flex-wrap items-center gap-x-3 gap-y-1.5 rounded-2xl border border-gold/30 bg-gold/10 px-5 py-3.5 backdrop-blur-md">
+            <span className="text-[11px] tracking-[0.3em] text-gold-light md:text-xs">
+              13~15억원대 시대
+            </span>
+            <span className="hidden h-3.5 w-px bg-gold-light/40 sm:inline-block" aria-hidden />
+            <span className="text-sm font-semibold text-sand sm:text-base">
+              34평 입주 시까지{" "}
+              <span className="text-gold-light">약 5천만원대</span>
+            </span>
+          </div>
+
+          <div className="mt-4 flex flex-wrap gap-2">
+            {[
+              "10·15 규제 미적용",
+              "분양권 전매 가능",
+              "실거주 의무 없음",
+              "1차 계약금 1,000만원"
+            ].map((t) => (
+              <span
+                key={t}
+                className="whitespace-nowrap rounded-full border border-white/15 bg-white/[0.06] px-3 py-1.5 text-[11px] text-sand/75 backdrop-blur-sm sm:text-xs"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#contact"
               className="group inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/20 px-6 py-4 sm:px-8 sm:py-5 text-base md:text-lg font-semibold text-sand backdrop-blur-md transition-colors hover:bg-gold/30"

@@ -1,6 +1,7 @@
 export const SECTIONS = [
   { id: "home", label: "HOME" },
   { id: "overview", label: "단지개요" },
+  { id: "benefit", label: "분양혜택" },
   { id: "location", label: "입지환경" },
   { id: "premium", label: "프리미엄" },
   { id: "gallery", label: "갤러리" },

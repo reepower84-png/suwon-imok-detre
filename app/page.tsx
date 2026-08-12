@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Overview from "@/components/Overview";
+import Benefit from "@/components/Benefit";
 import Location from "@/components/Location";
 import Premium from "@/components/Premium";
 import Gallery from "@/components/Gallery";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <Overview />
+        <Benefit />
         <Location />
         <Premium />
         <Gallery />

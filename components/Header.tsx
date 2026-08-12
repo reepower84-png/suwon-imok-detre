@@ -73,7 +73,7 @@ export default function Header() {
             <a
               key={s.id}
               href={`#${s.id}`}
-              className={`relative px-4 py-2 text-sm tracking-wider transition-colors ${
+              className={`relative whitespace-nowrap px-2.5 py-2 text-sm tracking-wider transition-colors xl:px-4 ${
                 active === s.id
                   ? "text-gold-light"
                   : "text-sand/70 hover:text-sand"
@@ -143,7 +143,7 @@ export default function Header() {
       {/* Mobile drawer */}
       <div
         className={`lg:hidden overflow-hidden transition-[max-height,opacity] duration-300 ${
-          open ? "max-h-[480px] opacity-100" : "max-h-0 opacity-0"
+          open ? "max-h-[640px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav className="container pb-6 pt-2 flex flex-col">

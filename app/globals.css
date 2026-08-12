@@ -52,6 +52,12 @@ section[id] {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
+  /* Cormorant Garamond defaults to old-style figures — force lining figures
+     where numbers carry the message (분양가·계약 조건). */
+  .nums-lining {
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
+  }
   .gold-line {
     background: linear-gradient(
       90deg,
