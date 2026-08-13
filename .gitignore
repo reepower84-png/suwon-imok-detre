@@ -6,3 +6,7 @@ out
 *.log
 
 .vercel
+tsconfig.tsbuildinfo
+
+# 분양 홍보자료 원본(약 69MB). 웹에서 쓰는 리사이즈본은 public/images/promo 에 커밋한다.
+public/images/부동산자료/

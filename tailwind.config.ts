@@ -48,6 +48,15 @@ const config: Config = {
           light: "#cdb27a",
           DEFAULT: "#a8854a",
           dark: "#7a5f33"
+        },
+        /* 직관형 프로모션 페이지(/promo) 전용 팔레트 — 밝은 배경 + 고대비 */
+        promo: {
+          navy: "#152a63",
+          "navy-deep": "#0b1a44",
+          "navy-soft": "#2c4a92",
+          red: "#e8413c",
+          "red-soft": "#fdeceb",
+          gray: "#f2f5fa"
         }
       },
       letterSpacing: {
