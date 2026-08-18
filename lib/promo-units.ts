@@ -13,6 +13,7 @@ export type Unit = {
   pyeongPrice: number; // 실사용면적 평당가(원)
   freeOption: string; // 한시적 무상 제공 옵션
   built: boolean; // 건립세대 여부
+  soldOut?: boolean; // 분양마감 여부
   plan: string; // 평면 이미지
   features: string[]; // 상품 특장점 요약
 };
@@ -28,8 +29,8 @@ export const UNITS: Unit[] = [
     usable: 39.82,
     pyeongPrice: 28555000,
     freeOption: "약 2,129만원",
-    built: false,
-    plan: "/images/promo/plan-84a.jpg",
+    built: true,
+    plan: "/images/promo/84a.jpg",
     features: ["4Bay 맞통풍", "3면 발코니 확장", "5.2m 광폭거실", "펜트리 + 대형 드레스룸"]
   },
   {
@@ -43,7 +44,7 @@ export const UNITS: Unit[] = [
     pyeongPrice: 28388000,
     freeOption: "약 1,723만원",
     built: true,
-    plan: "/images/promo/plan-84b.jpg",
+    plan: "/images/promo/84b.jpg",
     features: ["4Bay 맞통풍", "판상형", "5.2m 광폭거실", "펜트리 + 대형 드레스룸"]
   },
   {
@@ -57,7 +58,7 @@ export const UNITS: Unit[] = [
     pyeongPrice: 28330000,
     freeOption: "약 1,926만원",
     built: true,
-    plan: "/images/promo/plan-84c.jpg",
+    plan: "/images/promo/84c.jpg",
     features: ["3Bay 타워형", "4.7m 광폭거실", "대형 펜트리", "우물천장 약 2.6m"]
   },
   {
@@ -71,7 +72,7 @@ export const UNITS: Unit[] = [
     pyeongPrice: 26800000,
     freeOption: "약 3,307만원",
     built: true,
-    plan: "/images/promo/plan-115a.jpg",
+    plan: "/images/promo/115.jpg",
     features: ["4Bay 맞통풍", "3면 발코니 확장", "5.5m 광폭거실", "2 알파룸 + 대형 드레스룸"]
   },
   {
@@ -85,7 +86,8 @@ export const UNITS: Unit[] = [
     pyeongPrice: 26736000,
     freeOption: "약 3,356만원",
     built: true,
-    plan: "/images/promo/plan-116b.jpg",
+    soldOut: true,
+    plan: "/images/promo/116b.jpg",
     features: ["3Bay 타워형", "5m 광폭거실", "대형 드레스룸", "펜트리 구성"]
   },
   {
@@ -99,7 +101,7 @@ export const UNITS: Unit[] = [
     pyeongPrice: 27504000,
     freeOption: "약 4,028만원",
     built: true,
-    plan: "/images/promo/plan-139a.jpg",
+    plan: "/images/promo/139.jpg",
     features: ["4Bay 맞통풍", "판상형", "5.8m 광폭거실", "2 알파룸 + 대형 드레스룸"]
   },
   {
@@ -113,7 +115,7 @@ export const UNITS: Unit[] = [
     pyeongPrice: 27247000,
     freeOption: "약 3,962만원",
     built: true,
-    plan: "/images/promo/plan-141b.jpg",
+    plan: "/images/promo/141b.jpg",
     features: ["3Bay 타워형", "5.2m 광폭거실", "대형 드레스룸", "펜트리 구성"]
   }
 ];

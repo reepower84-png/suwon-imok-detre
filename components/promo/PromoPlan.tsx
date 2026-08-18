@@ -108,6 +108,11 @@ export default function PromoPlan() {
             >
               {unit.built ? "건립세대" : "미건립세대"}
             </li>
+            {unit.soldOut && (
+              <li className="rounded-full bg-promo-red px-3.5 py-2 text-[13px] font-bold text-white">
+                분양마감
+              </li>
+            )}
           </ul>
 
           {/* 평면 이미지 */}
